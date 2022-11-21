@@ -21,7 +21,13 @@
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Code:
-(setq tempel-clojure-templates-dir (file-name-directory load-file-name))
+
+(setq tempel-clojure-templates-dir
+      (file-name-directory (cond
+                            (load-in-progress load-file-name)
+                            ((and (boundp 'byte-compile-current-file) byte-compile-current-file)
+                             byte-compile-current-file)
+                            (:else (buffer-file-name)))))
 
 ;;;###autoload
 (defun tempel-clojure-initialize ()
