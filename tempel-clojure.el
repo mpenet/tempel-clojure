@@ -23,16 +23,17 @@
 ;;; Code:
 
 (setq tempel-clojure-templates-dir
-      (file-name-directory (cond
-                            (load-in-progress load-file-name)
-                            ((and (boundp 'byte-compile-current-file) byte-compile-current-file)
-                             byte-compile-current-file)
-                            (:else (buffer-file-name)))))
+      (file-name-directory
+       (cond
+        (load-in-progress load-file-name)
+        ((and (boundp 'byte-compile-current-file) byte-compile-current-file)
+         byte-compile-current-file)
+        (:else (buffer-file-name)))))
 
 ;;;###autoload
 (defun tempel-clojure-initialize ()
-  (let ((template-dir (expand-file-name "templates/*.eld" tempel-clojure-templates-dir)
-))
+  (let ((template-dir (expand-file-name "templates/*.eld"
+                                        tempel-clojure-templates-dir)))
     (when (boundp 'tempel-path)
       (cond
        ((stringp tempel-path) 
