@@ -23,8 +23,8 @@
 
 ;;; Commentary:
 
-;; This package adds support for clojure using tempel. It will simply add its
-;; template directory to tempel-path. 
+;; This package adds support for clojure using tempel.  It will simply add its
+;; template directory to tempel-path.
 
 ;;; Code:
 
@@ -38,11 +38,12 @@
 
 ;;;###autoload
 (defun tempel-clojure-initialize ()
+  "Add tempel-clojure template dir to \"tempel-path\"."
   (let ((template-dir (expand-file-name "templates/*.eld"
                                         tempel-clojure-templates-dir)))
     (when (boundp 'tempel-path)
       (cond
-       ((stringp tempel-path) 
+       ((stringp tempel-path)
         (setq tempel-path (list tempel-path template-dir)))
        ((listp tempel-path)
         (add-to-list 'tempel-path template-dir t))))))
