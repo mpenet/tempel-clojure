@@ -1,11 +1,12 @@
-;;; tempel-clojure.el --- Yasnippets for clojure
+;;; tempel-clojure.el --- tempel templates for clojure
 
 ;; Copyright (C) 2022 Max Penet
 
 ;; Author: Max Penet <mpenetr@s-exp.com>
-;; Keywords: snippets
+;; Keywords: abbrev
 ;; Version: 1.0.0
 ;; Package-Requires: ((tempel "0.5"))
+;; Homepage: https://github.com/mpenet/tempel-clojure
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -19,6 +20,11 @@
 
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+;;; Commentary:
+
+;; This package adds support for clojure using tempel. It will simply add its
+;; template directory to tempel-path. 
 
 ;;; Code:
 
