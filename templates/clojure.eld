@@ -1,4 +1,4 @@
-clojure-mode
+clojure-mode clojurescript-mode
 
 (fn "(fn [" p "]" n> r> ")")
 (defn "(defn " p " [" p "]" n> r> ")")
