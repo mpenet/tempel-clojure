@@ -5,7 +5,7 @@
 ;; Author: Max Penet <mpenetr@s-exp.com>
 ;; Keywords: abbrev
 ;; Version: 1.0.0
-;; Package-Requires: ((tempel "0.5"))
+;; Package-Requires: ((tempel "20221016.1017"))
 ;; Homepage: https://github.com/mpenet/tempel-clojure
 
 ;;; License:
