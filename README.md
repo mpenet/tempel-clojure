@@ -2,13 +2,18 @@
 
 Tempel templates for clojure 
 
-[wip]
-
 ## Installation
+
+
+### MELPA 
+
+It's pending for merge on melpa, in the meantime using straight.el:
+
+when it's merged it will be just: `M-x package-install tempel-clojure` 
 
 ### straight
 
-It's pending for merge on melpa, in the meantime using straight.el:
+Via straight you can get/use it today.
 
 ```elisp
 (use-package tempel-clojure
