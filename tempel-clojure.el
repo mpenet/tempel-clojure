@@ -1,4 +1,4 @@
-;;; tempel-clojure.el --- Clojure Templates for tempel 
+;;; tempel-clojure.el --- Clojure Templates for tempel
 
 ;; Copyright (C) 2022 Max Penet
 
